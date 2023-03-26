@@ -12,21 +12,33 @@
     <form action="post" id="survey-form">
         <label for="name" id="name-label">First Name</label>
         <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <br>
         <label for="email" id="email-label">Email</label>
         <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <br>
         <label for="num" id="number-label"> Number </label>
         <input type="number" name="num" id="number" min="0" max="9" placeholder="enter your number">
+        <br>
+        
         <select name="select" id="dropdown">
             <option value="men">men</option>
             <option value="women">women</option>
         </select>
+        <br>
         <input type="radio" name="gender" id="gender" value="Male">
+        <label for="gender"> Male </label><br>
         <input type="radio" name="gender" id="gender" value = "Female">
+        <label for="gender"> Female </label><br>
+        <br>
 
         <input type="checkbox" name="skills" id="skills" value="HTML">
+        <label for="skills"> HTML </label><br>
         <input type="checkbox" name="skills" id="skills" value="CSS">
+        <label for="skills"> CSS </label><br>
         <input type="checkbox" name="skills" id="skills" value="PHP">
+        <label for="skills"> PHP </label><br>
         <textarea name="txt" id="txt" cols="30" rows="10" placeholder="Enter more detail about yourself"></textarea>
+        <br>
         <input type="submit" value="Submit" id="submit">
     </form>
 </body>
