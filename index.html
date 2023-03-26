@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"> Survey Form</h1>
+    <p id="description"> We build this form to collect your personal information for the survey</p>
+    <form action="post" id="survey-form">
+        <label for="name" id="name-label">First Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <label for="num" id="number-label"> Number </label>
+        <input type="number" name="num" id="number" min="0" max="9" placeholder="enter your number">
+        <select name="select" id="dropdown">
+            <option value="men">men</option>
+            <option value="women">women</option>
+        </select>
+        <input type="radio" name="gender" id="gender" value="Male">
+        <input type="radio" name="gender" id="gender" value = "Female">
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-
-    <script  src="js/index.js"></script>
-    <h1>Hello World!<h1>
-  </body>
+        <input type="checkbox" name="skills" id="skills" value="HTML">
+        <input type="checkbox" name="skills" id="skills" value="CSS">
+        <input type="checkbox" name="skills" id="skills" value="PHP">
+        <textarea name="txt" id="txt" cols="30" rows="10" placeholder="Enter more detail about yourself"></textarea>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
 </html>
